@@ -1,0 +1,14 @@
+import 'svelte/ssr/register';
+import serverRender from './util/serverRender';
+import App from './components/App.html';
+
+<include(input.pageLayout)>
+    <@body>
+        <div id="searchResultsMount">
+            $ serverRender(App, input.searchResults, out);
+        </div>
+        <script>
+            window.searchResultsData=${JSON.stringify(input.searchResults)};
+        </script>
+    </@body>
+</include>

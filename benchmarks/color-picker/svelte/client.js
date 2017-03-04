@@ -3,6 +3,8 @@ import App from './components/App.html';
 var mountNode = document.getElementById("mount");
 
 if (window.colors) {
+    mountNode.innerHTML = '';
+
     var colors = window.colors;
     const app = new App({
         target: mountNode,

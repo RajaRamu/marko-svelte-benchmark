@@ -8,7 +8,7 @@ var benchmarks = require('./benchmarks');
 var benchmarkClientCreateRoute = require('./benchmark-client/createRoute');
 var indexTemplate = require('./index.marko');
 
-var isProduction = process.env.NODE_ENV === 'production';
+var isProduction = false;//process.env.NODE_ENV === 'production';
 var minify = isProduction;
 
 var app = express();

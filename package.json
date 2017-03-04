@@ -12,6 +12,7 @@
     "minify": "node ./scripts/minify.js",
     "build-inferno": "npm run bundle-inferno --silent && node ./scripts/minify.js inferno",
     "build-marko": "npm run bundle-marko --silent && node ./scripts/minify.js marko",
+    "build-svelte": "npm run bundle-svelte --silent && node ./scripts/minify.js svelte",
     "build-vue": "npm run bundle-vue --silent && node ./scripts/minify.js vue",
     "bundle-inferno": "node ./scripts/bundle.js inferno",
     "bundle-marko": "node ./scripts/bundle.js marko",

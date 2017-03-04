@@ -1,0 +1,20 @@
+<div className="search-results">
+	<div>
+		{{#each searchResultsData.items as item, i}}
+			<SearchResultsItem key="{{i}}" item="{{item}}"/>
+		{{/each}}
+	</div>
+	<Footer/>
+</div>
+
+<script>
+	import SearchResultsItem from './SearchResultsItem.html';
+	import Footer from './Footer.html';
+
+	export default {
+		components: {
+			SearchResultsItem,
+			Footer
+		}
+	};
+</script>
