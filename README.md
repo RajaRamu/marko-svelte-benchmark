@@ -19,11 +19,6 @@ Environment:
 ## Server-side
 
 ```
-~/marko-js/isomorphic-ui-benchmarks (master)> npm run benchmark
-
-> isomorphic-ui-benchmarks@1.0.0 benchmark /Users/psteeleidem/development/github/marko-js/isomorphic-ui-benchmarks
-> node --expose-gc benchmark-server/run.js
-
 Warming up...
 
 Warmup complete.
@@ -32,25 +27,29 @@ Running "color-picker"...
 
 Running benchmark "inferno"...
 
-inferno x 2,132 ops/sec ±0.68% (88 runs sampled)
+inferno x 2,053 ops/sec ±0.69% (86 runs sampled)
 
 Running benchmark "marko"...
 
-marko x 5,519 ops/sec ±6.05% (56 runs sampled)
+marko x 5,088 ops/sec ±6.54% (59 runs sampled)
 
 Running benchmark "preact"...
 
-preact x 2,833 ops/sec ±4.07% (79 runs sampled)
+preact x 3,252 ops/sec ±0.84% (88 runs sampled)
 
 Running benchmark "react"...
 
-react x 262 ops/sec ±2.26% (75 runs sampled)
+react x 228 ops/sec ±2.84% (73 runs sampled)
+
+Running benchmark "svelte"...
+
+svelte x 14,911 ops/sec ±2.25% (80 runs sampled)
 
 Running benchmark "vue"...
 
-vue x 1,514 ops/sec ±3.65% (75 runs sampled)
+vue x 1,297 ops/sec ±3.68% (76 runs sampled)
 
-vFastest is marko
+Fastest is svelte
 
 --------------
 
@@ -63,33 +62,31 @@ Running "search-results"...
 
 Running benchmark "inferno"...
 
-inferno x 383 ops/sec ±2.78% (78 runs sampled)
+inferno x 408 ops/sec ±0.64% (84 runs sampled)
 
 Running benchmark "marko"...
 
-marko x 4,854 ops/sec ±3.03% (83 runs sampled)
+marko x 1,993 ops/sec ±5.77% (62 runs sampled)
 
 Running benchmark "preact"...
 
-preact x 371 ops/sec ±2.58% (81 runs sampled)
+preact x 399 ops/sec ±0.94% (82 runs sampled)
 
 Running benchmark "react"...
 
-react x 42.10 ops/sec ±2.49% (53 runs sampled)
+react x 37.00 ops/sec ±2.35% (48 runs sampled)
+
+Running benchmark "svelte"...
+
+svelte x 5,710 ops/sec ±3.54% (76 runs sampled)
 
 Running benchmark "vue"...
 
-vue x 185 ops/sec ±4.13% (70 runs sampled)
+vue x 166 ops/sec ±4.39% (70 runs sampled)
 
-Fastest is marko
+Fastest is svelte
 
 --------------
-
-
-DONE!
-
-~/marko-js/isomorphic-ui-benchmarks (master)> node -v
-v7.5.0
 ```
 
 # Client-side
@@ -103,14 +100,16 @@ Warming up...
 Warmup complete.
 Running "search-results"...
 Running benchmark "inferno"...
-inferno x 229 ops/sec ±1.12% (56 runs sampled)
+inferno x 165 ops/sec ±2.39% (55 runs sampled)
 Running benchmark "marko"...
-marko x 296 ops/sec ±1.14% (59 runs sampled)
+marko x 211 ops/sec ±1.56% (56 runs sampled)
 Running benchmark "preact"...
-preact x 256 ops/sec ±0.69% (60 runs sampled)
+preact x 188 ops/sec ±1.59% (56 runs sampled)
 Running benchmark "react"...
-react x 214 ops/sec ±0.58% (58 runs sampled)
-Fastest is marko
+react x 158 ops/sec ±2.16% (55 runs sampled)
+Running benchmark "svelte"...
+svelte x 332 ops/sec ±1.11% (57 runs sampled)
+Fastest is svelte
 ```
 
 ## Color picker
@@ -122,14 +121,16 @@ Warming up...
 Warmup complete.
 Running "color-picker"...
 Running benchmark "inferno"...
-inferno x 3,085 ops/sec ±0.93% (20 runs sampled)
+inferno x 2,766 ops/sec ±1.19% (59 runs sampled)
 Running benchmark "marko"...
-marko x 4,043 ops/sec ±3.37% (49 runs sampled)
+marko x 4,057 ops/sec ±2.76% (55 runs sampled)
 Running benchmark "preact"...
-preact x 3,123 ops/sec ±0.33% (63 runs sampled)
+preact x 2,719 ops/sec ±0.90% (60 runs sampled)
 Running benchmark "react"...
-react x 2,394 ops/sec ±0.79% (61 runs sampled)
-Fastest is marko
+react x 2,171 ops/sec ±1.66% (56 runs sampled)
+Running benchmark "svelte"...
+svelte x 7,449 ops/sec ±1.64% (40 runs sampled)
+Fastest is svelte
 ```
 # Additional details
 
@@ -142,6 +143,7 @@ The following UI libraries are currently included:
 - [preact](https://github.com/developit/preact)
 - [react](https://github.com/facebook/react)
 - [vue](https://github.com/vuejs/vue)
+- [svelte](https://github.com/sveltejs/svelte)
 
 ## Included benchmarks
 
